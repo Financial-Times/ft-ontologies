@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ft-core: <http://www.ft.com/ontology/core/> .
+@prefix ft-orgs: <http://www.ft.com/ontology/organisation/> .
+@prefix ft-people: <http://www.ft.com/ontology/person/> .
+
+
+#Core
+ft-core:prefLabel owl:sameAs schema:name .
+ft-core:description owl:sameAs schema:description .
+
+# Organizations
+ft-orgs:Organisation owl:sameAs schema:Organization .
+ft-orgs:leiCode owl:sameAs schema:leiCode .
+ft-orgs:parentOrganisation owl:sameAs schema:parentOrganization .
+ft-orgs:subsidiaries owl:sameAs schema:subOrganization .
+ft-orgs:memberships owl:sameAs schema:member .
+
+#People
+ft-people:Person owl:sameAs schema:Person .
+ft-people:memberships owl:sameAs schema:memberOf .
+ft-people:title owl:sameAs schema:jobTitle .
+ft-people:emailAddress owl:sameAs schema:email .
+
+#Brands
