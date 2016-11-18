@@ -5,23 +5,34 @@
 @prefix ft-core: <http://www.ft.com/ontology/core/> .
 @prefix ft-orgs: <http://www.ft.com/ontology/organisation/> .
 @prefix ft-people: <http://www.ft.com/ontology/person/> .
-
+@prefix ft-product: <http://www.ft.com/ontology/product/> .
+@prefix ft-annotation: <http://www.ft.com/ontology/annotation/> .
+@prefix ft-content: <http://www.ft.com/ontology/content/> .
+@prefix ft-class: <http://www.ft.com/ontology/classification/> .
 
 #Core
-ft-core:prefLabel owl:sameAs schema:name .
-ft-core:description owl:sameAs schema:description .
+ft-core:prefLabel rdfs:subPropertyOf schema:name .
+ft-core:description rdfs:subPropertyOf schema:description .
 
 # Organizations
-ft-orgs:Organisation owl:sameAs schema:Organization .
-ft-orgs:leiCode owl:sameAs schema:leiCode .
-ft-orgs:parentOrganisation owl:sameAs schema:parentOrganization .
-ft-orgs:subsidiaries owl:sameAs schema:subOrganization .
-ft-orgs:memberships owl:sameAs schema:member .
+ft-orgs:Organisation rdfs:subClassOf schema:Organization .
+ft-orgs:leiCode rdfs:subPropertyOf schema:leiCode .
+ft-orgs:parentOrganisation rdfs:subPropertyOf schema:parentOrganization .
+ft-orgs:subsidiaries rdfs:subPropertyOf schema:subOrganization.
+ft-orgs:memberships rdfs:subPropertyOf schema:member .
 
 #People
-ft-people:Person owl:sameAs schema:Person .
-ft-people:memberships owl:sameAs schema:memberOf .
-ft-people:title owl:sameAs schema:jobTitle .
-ft-people:emailAddress owl:sameAs schema:email .
+ft-people:Person rdfs:subClassOf schema:Person   .
+ft-people:memberships rdfs:subPropertyOf schema:memberOf .
+ft-people:title rdfs:subPropertyOf schema:jobTitle .
+ft-people:emailAddress rdfs:subPropertyOf schema:email .
 
-#Brands
+#Content
+ft-content:Article rdfs:subClassOf schema:Article  .
+ft-content:title rdfs:subPropertyOf schema:headline .
+ft-content:publishedDate rdfs:subPropertyOf schema:datePublished .
+ft-content:image rdfs:subPropertyOf schema:mainImage .
+ft-content:author rdfs:subPropertyOf schema:author .
+
+#Annotation
+ft-annotation:mentions rdfs:subPropertyOf schema:mentions .
