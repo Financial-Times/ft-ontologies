@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "ft-annotation": "http://www.ft.com/ontology/annotation/",
+    "ft-class": "http://www.ft.com/ontology/classification/",
+    "ft-content": "http://www.ft.com/ontology/content/",
+    "ft-core": "http://www.ft.com/ontology/core/",
+    "ft-orgs": "http://www.ft.com/ontology/organisation/",
+    "ft-people": "http://www.ft.com/ontology/person/",
+    "ft-product": "http://www.ft.com/ontology/product/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "ft-content:author",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:author"
+      }
+    },
+    {
+      "@id": "ft-orgs:parentOrganisation",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:parentOrganization"
+      }
+    },
+    {
+      "@id": "ft-content:publishedDate",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:datePublished"
+      }
+    },
+    {
+      "@id": "ft-people:Person",
+      "rdfs:subClassOf": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "ft-annotation:mentions",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:mentions"
+      }
+    },
+    {
+      "@id": "ft-people:title",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:jobTitle"
+      }
+    },
+    {
+      "@id": "ft-people:memberships",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:memberOf"
+      }
+    },
+    {
+      "@id": "ft-people:emailAddress",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:email"
+      }
+    },
+    {
+      "@id": "ft-content:image",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:mainImage"
+      }
+    },
+    {
+      "@id": "ft-orgs:leiCode",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:leiCode"
+      }
+    },
+    {
+      "@id": "ft-core:prefLabel",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:name"
+      }
+    },
+    {
+      "@id": "ft-content:title",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:headline"
+      }
+    },
+    {
+      "@id": "ft-orgs:Organisation",
+      "rdfs:subClassOf": {
+        "@id": "schema:Organization"
+      }
+    },
+    {
+      "@id": "ft-core:description",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:description"
+      }
+    },
+    {
+      "@id": "ft-orgs:subsidiaries",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:subOrganization"
+      }
+    },
+    {
+      "@id": "ft-content:Article",
+      "rdfs:subClassOf": {
+        "@id": "schema:Article"
+      }
+    },
+    {
+      "@id": "ft-orgs:memberships",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:member"
+      }
+    }
+  ]
+}

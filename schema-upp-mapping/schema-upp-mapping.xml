@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:ft-annotation="http://www.ft.com/ontology/annotation/" xmlns:ft-class="http://www.ft.com/ontology/classification/" xmlns:ft-content="http://www.ft.com/ontology/content/" xmlns:ft-core="http://www.ft.com/ontology/core/" xmlns:ft-orgs="http://www.ft.com/ontology/organisation/" xmlns:ft-people="http://www.ft.com/ontology/person/" xmlns:ft-product="http://www.ft.com/ontology/product/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/">
+  <rdf:Description rdf:about="http://www.ft.com/ontology/core/prefLabel">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/core/description">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/description"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/organisation/Organisation">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/organisation/leiCode">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/leiCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/organisation/parentOrganisation">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/parentOrganization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/organisation/subsidiaries">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/subOrganization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/organisation/memberships">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/member"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/person/Person">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/person/memberships">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/memberOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/person/title">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/jobTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/person/emailAddress">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/email"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/Article">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Article"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/title">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/headline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/publishedDate">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/datePublished"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/image">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/mainImage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/author">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/author"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/annotation/mentions">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/mentions"/>
+  </rdf:Description>
+</rdf:RDF>
