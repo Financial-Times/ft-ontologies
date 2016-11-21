@@ -31,7 +31,7 @@ ft-people:emailAddress rdfs:subPropertyOf schema:email .
 ft-content:Article rdfs:subClassOf schema:Article  .
 ft-content:title rdfs:subPropertyOf schema:headline .
 ft-content:publishedDate rdfs:subPropertyOf schema:datePublished .
-ft-content:image rdfs:subPropertyOf schema:mainImage .
+ft-content:mainImage rdfs:subPropertyOf schema:image .
 ft-content:author rdfs:subPropertyOf schema:author .
 
 #Annotation

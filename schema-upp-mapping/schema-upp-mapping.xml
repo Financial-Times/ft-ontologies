@@ -42,8 +42,8 @@
   <rdf:Description rdf:about="http://www.ft.com/ontology/content/publishedDate">
     <rdfs:subPropertyOf rdf:resource="http://schema.org/datePublished"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ft.com/ontology/content/image">
-    <rdfs:subPropertyOf rdf:resource="http://schema.org/mainImage"/>
+  <rdf:Description rdf:about="http://www.ft.com/ontology/content/mainImage">
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/image"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ft.com/ontology/content/author">
     <rdfs:subPropertyOf rdf:resource="http://schema.org/author"/>
