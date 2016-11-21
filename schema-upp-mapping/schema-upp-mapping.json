@@ -7,7 +7,6 @@
     "mapping":"description",
     "concept":"things"
   },
-
   "Organization" : {
     "mapping":"Organisation",
     "concept":"organisations"
@@ -28,7 +27,6 @@
     "mapping":"memberships",
     "concept":"organisations"
   },
-
   "Person" : {
     "mapping":"Person",
     "concept":"people"
@@ -45,7 +43,6 @@
     "mapping":"emailAddress",
     "concept":"people"
   },
-
   "Article" : {
     "mapping":"Article",
     "concept":"enrichedcontent"
