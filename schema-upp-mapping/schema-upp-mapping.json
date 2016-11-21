@@ -66,5 +66,5 @@
   "mentions" : {
     "mapping":"mentions",
     "concept":"enrichedcontent"
-  },
+  }
 }
